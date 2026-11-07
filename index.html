@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>FirstBatch research</title>
-<meta name="description" content="Imperial College London student research on getting a hardware product's first 50–500 units made. 3-minute survey or 10-minute chat.">
+<meta name="description" content="Imperial College London student research on getting a hardware product's first 50–500 units made. 3-minute survey or 10-minute chat."> 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700;800&family=JetBrains+Mono:wght@400;500&display=swap">
 <script>
@@ -67,15 +67,25 @@ a{color:var(--copper)}
 
   <section>
     <h1>Got a working prototype? Tell us what getting your first batch made was like.</h1>
-    <p class="lead">We're engineering students researching why the jump from a prototype to your first 50–500 units is so hard. We're not selling anything. We want to hear what really happened.</p>
+    <p class="lead">We're a group of engineering students at Imperial College London (Group R, Entrepreneurship module, UN SDG 9: industry and innovation). We're researching why the jump from a working prototype to your first 50–500 units is so hard. We're not selling anything. We want to hear what really happened.</p>
   </section>
 
   <section class="ticket" aria-label="Take part">
     <div class="tag">Two ways to help · pick one</div>
     <div class="actions">
-      <a class="btn primary" href="#survey">Take the 3-minute survey<small>Ten quick questions</small></a>
+      <a class="btn primary" href="#survey">Take the 3-minute survey<small>Mostly rating statements, 1 to 5</small></a>
       <a class="btn" href="#book">Book a 10-minute chat<small>Video call, at a time that suits you</small></a>
     </div>
+  </section>
+
+  <section>
+    <h2>The idea we're testing: FirstBatch</h2>
+    <p>FirstBatch would help hardware startups with a working prototype get their first 50–500 sellable units made, in weeks rather than months. It has two parts:</p>
+    <ul>
+      <li><b>1. Readiness check, before you order.</b> Software checks every part on your parts list for shortages, long lead times and parts being discontinued. An engineer reviews your design for problems that make it hard or costly to manufacture. We then run an early EMC pre-scan, a quick test for electrical interference, which every electronic product must pass before it can be sold in the UK. Catching a problem here is much cheaper than failing the official lab test later.</li>
+      <li><b>2. Managed first batch.</b> We quote, source the parts and place the batch with vetted UK small-batch makers, then check the first units before they reach you. One team instead of five suppliers.</li>
+    </ul>
+    <p class="fine">This is only an idea. Nothing exists yet, and we don't know if this problem is real for you. That's what we're asking.</p>
   </section>
 
   <section class="grid2">
@@ -90,8 +100,7 @@ a{color:var(--copper)}
     </div>
     <div>
       <h2>What we'll ask</h2>
-      <p class="q">The last time you needed more units than you could build yourself. What was hardest, what it cost you in weeks and pounds, and what you tried.</p>
-      <p class="fine">Everyone who takes part gets a short summary of what we find.</p>
+      <p class="q">The survey asks you to rate statements like "Finding a manufacturer willing to make a small batch was hard". The chat asks about the last time you needed more units than you could build yourself: what was hardest, what it cost you, and what you tried.</p>
     </div>
   </section>
 
@@ -126,7 +135,7 @@ a{color:var(--copper)}
     p.appendChild(document.createTextNode('Not loading? ')); p.appendChild(a);
     el.appendChild(p);
   }
-  frame('form-box', c.FORM_EMBED_URL, 1650, 'FirstBatch survey');
+  frame('form-box', c.FORM_EMBED_URL, 2300, 'FirstBatch survey');
   var b = c.BOOKING_URL || '';
   if (b && b.indexOf('calendar.google.com') > -1 && b.indexOf('gv=true') < 0) b += (b.indexOf('?') > -1 ? '&' : '?') + 'gv=true';
   if (b && b.indexOf('calendar.app.google') > -1) {
