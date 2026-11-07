@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>FirstBatch research</title>
+<meta name="description" content="Imperial College London student research on getting a hardware product's first 50–500 units made. 3-minute survey or 10-minute chat.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700;800&family=JetBrains+Mono:wght@400;500&display=swap">
+<script>
+/* ===== EDIT THESE THREE LINES AFTER RUNNING THE SETUP SCRIPT ===== */
+window.FB = {
+  FORM_EMBED_URL: "https://docs.google.com/forms/d/e/1FAIpQLSeUyEdBN8INDG_kT6Fbiy3jInNKSQ1x3OdLGcWMvVB_8oa4bw/viewform?embedded=true",   // from the tracker's Log tab, e.g. https://docs.google.com/forms/d/e/XXXX/viewform?embedded=true
+  BOOKING_URL: "https://calendar.app.google/WWjeZKY976C8jhid7",      // Google Calendar appointment schedule link (or Calendly)
+  CONTACT_EMAIL: "firstbatch.research@gmail.com"     // the team Gmail address
+};
+</script>
+<style>
+/* Layout: one narrow reading column; a "job ticket" panel carries the two actions. */
+:root{
+  --bg:#F4F6F1; --surface:#FFFFFF; --ink:#16201B; --muted:#56655D; --line:#D9DFD8;
+  --copper:#A4561E; --board:#1D4736; --board-ink:#EAF2EC;
+  --display:"Archivo",system-ui,sans-serif; --body:"Archivo",system-ui,sans-serif; --mono:"JetBrains Mono",ui-monospace,monospace;
+}
+@media (prefers-color-scheme:dark){:root{
+  --bg:#0F1512; --surface:#16201B; --ink:#E4EBE6; --muted:#9AA9A1; --line:#28342E;
+  --copper:#E08A4C; --board:#1A3A2D; --board-ink:#E4EFE8; color-scheme:dark}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 var(--body);
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.wrap{max-width:760px;margin:0 auto;padding-block:28px 56px;display:grid;gap:40px}
+header{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap}
+.mark{font:800 20px/1 var(--display);letter-spacing:-.01em}
+.mark span{color:var(--copper)}
+.tag{font:500 12px/1.4 var(--mono);color:var(--muted);letter-spacing:.04em;text-transform:uppercase}
+h1{font:800 clamp(30px,6vw,46px)/1.08 var(--display);letter-spacing:-.02em;margin:0 0 16px;text-wrap:balance}
+h2{font:700 22px/1.25 var(--display);margin:0 0 10px;text-wrap:balance}
+p{margin:0 0 12px;max-width:62ch}
+.lead{font-size:18px;color:var(--muted)}
+.ticket{background:var(--board);color:var(--board-ink);border-radius:6px;padding:22px;display:grid;gap:16px}
+.ticket .tag{color:color-mix(in srgb,var(--board-ink) 70%,transparent)}
+.actions{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.btn{display:block;text-decoration:none;border-radius:4px;padding:14px 16px;font:700 16px/1.3 var(--display);
+  border:1.5px solid var(--board-ink);color:var(--board-ink)}
+.btn small{display:block;font:400 13px/1.4 var(--body);opacity:.8;margin-top:2px}
+.btn.primary{background:var(--copper);border-color:var(--copper);color:#fff}
+.btn:focus-visible,a:focus-visible{outline:3px solid var(--copper);outline-offset:2px}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px}
+ul{margin:0;padding-left:20px}
+li{margin:4px 0}
+.q{font:400 14px/1.6 var(--mono);color:var(--muted);border-left:2px solid var(--copper);padding-left:12px}
+.embed{background:var(--surface);border:1px solid var(--line);border-radius:6px;overflow:hidden}
+.embed iframe{display:block;width:100%;border:0;background:#fff}
+.embed .pending{padding:20px;color:var(--muted)}
+.fine{font-size:14px;color:var(--muted)}
+footer{border-top:1px solid var(--line);padding-top:16px}
+a{color:var(--copper)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="mark">First<span>Batch</span></div>
+    <div class="tag">Imperial College London · student research</div>
+  </header>
+
+  <section>
+    <h1>Got a working prototype? Tell us what getting your first batch made was like.</h1>
+    <p class="lead">We're engineering students researching why the jump from a prototype to your first 50–500 units is so hard. We're not selling anything. We want to hear what really happened.</p>
+  </section>
+
+  <section class="ticket" aria-label="Take part">
+    <div class="tag">Two ways to help · pick one</div>
+    <div class="actions">
+      <a class="btn primary" href="#survey">Take the 3-minute survey<small>Ten quick questions</small></a>
+      <a class="btn" href="#book">Book a 10-minute chat<small>Video call, at a time that suits you</small></a>
+    </div>
+  </section>
+
+  <section class="grid2">
+    <div>
+      <h2>Who we'd like to hear from</h2>
+      <ul>
+        <li>Hardware founders with a prototype or first product</li>
+        <li>Engineers who have run a small production batch</li>
+        <li>UK electronics makers and assemblers</li>
+        <li>EMC test labs, incubators and hackspaces</li>
+      </ul>
+    </div>
+    <div>
+      <h2>What we'll ask</h2>
+      <p class="q">The last time you needed more units than you could build yourself. What was hardest, what it cost you in weeks and pounds, and what you tried.</p>
+      <p class="fine">Everyone who takes part gets a short summary of what we find.</p>
+    </div>
+  </section>
+
+  <section id="survey">
+    <h2>3-minute survey</h2>
+    <div class="embed" id="form-box"><div class="pending">The survey opens here shortly.</div></div>
+  </section>
+
+  <section id="book">
+    <h2>Book a 10-minute chat</h2>
+    <p>Pick any open slot. We'll send a video link by email.</p>
+    <div class="embed" id="book-box"><div class="pending">Booking opens here shortly.</div></div>
+  </section>
+
+  <footer class="fine">
+    <p>Your answers are used anonymously in a coursework project for the Entrepreneurship module at Imperial College London (Group R). We never share your details. To have your answers deleted, email us<span id="contact"></span>.</p>
+  </footer>
+</div>
+<script>
+(function(){
+  var c = window.FB || {};
+  function frame(box, url, h, label){
+    if(!url) return;
+    var el = document.getElementById(box);
+    el.innerHTML = '';
+    var f = document.createElement('iframe');
+    f.src = url; f.height = h; f.title = label; f.loading = 'lazy';
+    el.appendChild(f);
+    var p = document.createElement('div'); p.className = 'pending';
+    var a = document.createElement('a'); a.href = url.replace('?embedded=true','').replace('&embedded=true','');
+    a.target = '_blank'; a.rel = 'noopener'; a.textContent = 'Open in a new tab';
+    p.appendChild(document.createTextNode('Not loading? ')); p.appendChild(a);
+    el.appendChild(p);
+  }
+  frame('form-box', c.FORM_EMBED_URL, 1650, 'FirstBatch survey');
+  var b = c.BOOKING_URL || '';
+  if (b && b.indexOf('calendar.google.com') > -1 && b.indexOf('gv=true') < 0) b += (b.indexOf('?') > -1 ? '&' : '?') + 'gv=true';
+  if (b && b.indexOf('calendar.app.google') > -1) {
+    var bb = document.getElementById('book-box');
+    bb.innerHTML = '';
+    var pp = document.createElement('div'); pp.className = 'pending';
+    var aa = document.createElement('a'); aa.href = b; aa.target = '_blank'; aa.rel = 'noopener';
+    aa.className = 'btn primary'; aa.style.display = 'inline-block'; aa.textContent = 'Pick a time on Google Calendar';
+    pp.appendChild(aa); bb.appendChild(pp);
+  } else { frame('book-box', b, 760, 'Book a chat'); }
+  if (c.CONTACT_EMAIL) document.getElementById('contact').textContent = ' at ' + c.CONTACT_EMAIL;
+})();
+</script>
+</body>
+</html>
